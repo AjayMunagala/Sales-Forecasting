@@ -1,0 +1,49 @@
+<nav *ngIf="shouldShowNavbar()">
+  <div>
+    <ul>
+      <div>
+        <li>
+          <a routerLink="/home" routerLinkActive="active">
+            <span>Home</span>
+          </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a routerLink="/prediction" routerLinkActive="active">
+            <span>Prediction</span>
+          </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a routerLink="/graph" routerLinkActive="active">
+            <span>Graph</span>
+          </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a routerLink="/results" routerLinkActive="active">
+            <span>Results</span>
+          </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a routerLink="/powerbi" routerLinkActive="active">
+            <span>Power BI</span>
+          </a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a (click)="logout()">
+            <span>Logout</span>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>
+

@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="centered-graph">
+    <h2>Graph Components</h2>
+    <div class="graphs-container">
+      <div class="graph-container">
+        <h3>Actual Sales Price</h3>
+        <img *ngIf="actualGraphImageUrl" [src]="actualGraphImageUrl" alt="Actual Sales Price Graph" />
+      </div>
+      <div class="graph-container">
+        <h3>Predicted Sales Price</h3>
+        <img *ngIf="predictedGraphImageUrl" [src]="predictedGraphImageUrl" alt="Predicted Sales Price Graph" />
+      </div>
+      <div class="graph-container">
+        <h3>Forecasted Sales Price</h3>
+        <img *ngIf="forecastGraphImageUrl" [src]="forecastGraphImageUrl" alt="Forecasted Sales Price Graph" />
+      </div>
+      <div class="graph-container">
+        <h3>Combined Sales Price</h3>
+        <img *ngIf="combinedGraphImageUrl" [src]="combinedGraphImageUrl" alt="Combined Sales Price Graph" />
+      </div>
+    </div>
+  </div>
+  <button class="result-button" (click)="navigateToResults()">Show Results</button>
+</div>

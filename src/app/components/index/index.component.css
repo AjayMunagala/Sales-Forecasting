@@ -1,0 +1,48 @@
+.image-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: rgb(229, 218, 227);
+}
+
+.image-container img {
+  width: 800px;
+  display: inline-block;
+  height: auto;
+}
+
+.text-container {
+  margin-left: 20px;
+  margin-top: 400px;
+}
+
+.text-container h1.title {
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-container p.description {
+  font-size: 18px;
+  color: #777;
+  font-style: italic;
+}
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:active {
+  background-color: #3e8e41;
+}

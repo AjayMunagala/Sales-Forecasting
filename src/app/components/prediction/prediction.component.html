@@ -1,0 +1,38 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-clip-rotate" [fullScreen]="true" >
+  
+</ngx-spinner>
+
+<div class="container">
+  <div class="header">
+    <h1>Upload Your CSV File</h1>
+  </div>
+  <div class="input-container">
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="csvFile">Choose Your CSV File:</label>
+        <div class="upload-container">
+          <input type="file" id="csvFile" name="csvFile" accept=".csv" (change)="onFileChange($event)">
+          <div class="upload-line"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="periodicity">Periodicity:</label>
+        <select id="periodicity" name="periodicity" [(ngModel)]="periodicity">
+          <option value="weeks">Weeks</option>
+          <option value="months">Months</option>
+          <option value="years">Years</option>
+          <option value="days">Days</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="periodicNumber">Periodic Number:</label>
+        <input type="number" id="periodicNumber" name="periodicNumber" [(ngModel)]="periodicNumber">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+

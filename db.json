@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "id": "Munagala Ajay",
+      "name": "Ajay",
+      "password": "Ajay@123",
+      "email": "maji2293@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "Vinay",
+      "name": "vinay",
+      "password": "Vinay@123",
+      "email": "munagalaajay.cse2020@citchennai.net",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ]
+}

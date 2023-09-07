@@ -1,0 +1,61 @@
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .image {
+    width: 600px;
+    height: 740px;
+    margin-left: 13%;
+    
+  
+  }
+  
+  .text-container {
+    margin-left: 60%;
+    margin-top: -25%;
+    
+    
+    
+  }
+
+  @keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: rgba(0, 0, 255, 0); }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+  
+  .rainbow-text {
+    animation: rainbow 10s linear infinite;
+  }
+  h1{
+     font-family: "Georgia", monospace;
+     font-weight: bold;
+     font-size: 35px;
+  }
+  
+  .predict-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .predict-button:hover {
+    background-color: #45a049;
+  }
+
+  .predict-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #888;
+    font-style: italic;
+  }
+  

@@ -1,0 +1,51 @@
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+.button{
+      display: flex;
+      justify-content: space-between;
+} 
+
+.login {
+    position: fixed;
+    margin-left: 30x;
+    top: 50%;
+    left: 85%;
+   
+    /* background-color: rgb(234, 234, 234); */
+    background-color: rgba(234, 234, 234, 0.5); /* Adjust the opacity value (0.5) as desired */
+    backdrop-filter: blur(5px); /* Adjust the blur radius (5px) as desired */
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border: double;
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  .left-image {
+    position: absolute;
+    top: 50%;
+    /* left: 10px; */
+    transform: translateY(-50%);
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+}
+
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color:none;
+  --mdc-protected-button-label-text-color: #080606;
+  border: double;
+}
+.mat-mdc-raised-button.mat-accent {
+  --mdc-protected-button-container-color:none;
+  --mdc-protected-button-label-text-color: #0f0c0c;
+  border: double;
+}
